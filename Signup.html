@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>swift</title>
+
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/1af3d7e4a4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"
+      defer
+    ></script>
+    <script src="/js/validation.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <form method="post" action="proces-signup.php" id="Signup" novalidate>
+        <div class="work">
+          <h1>Sign Up</h1>
+          <img src="./img/modit.jpg" alt="" />
+        </div>
+        <br /><br />
+        <p>Register an account to access our services</p>
+        <div class="main">
+          <div class="input-box shadow-s">
+            <input type="text"/ placeholder="Enter your firstname"
+            name="firstname" id="firstname" >
+            <i class="dape bx bx-right-arrow-alt"></i>
+
+            <label for="firstname"></label>
+          </div>
+          <div class="input-box shadow-s">
+            <input type="text" id="lastname" / placeholder="Enter your Lastname"
+            name="lastname" >
+            <i class="dape bx bx-right-arrow-alt"></i>
+
+            <label for="lastname"></label>
+          </div>
+          <div class="input-box shadow-s">
+            <input type="text" id="username" / placeholder="Enter your Username"
+            maxlength="12" name="username" >
+            <i class="dape bx bxs-user"></i>
+
+            <label for="username"></label>
+          </div>
+          <div class="input-box shadow-s">
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              id="email"
+              name="email"
+            />
+            <i class="dape bx bxs-envelope"></i>
+
+            <label for="email"></label>
+          </div>
+          <div class="input-box shadow-s">
+            <input
+              type="number"
+              id="number"
+              placeholder="Enter your phone number"
+              minlength="3"
+              name="number"
+            />
+            <i class="dape bx bxs-phone"></i>
+
+            <label for="number"></label>
+          </div>
+          <div class="input-box shadow-s">
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter your password"
+              name="password"
+            />
+            <i class="dape bx bxs-key"></i>
+
+            <label for="password"></label>
+          </div>
+        </div>
+        <div class="input-box shadow-s another">
+          <input
+            type="password"
+            id="password_confirm"
+            placeholder="Confirm your password (Re-type)"
+            name="password_confirm"
+          />
+          <i class="dape bx bxs-key"></i>
+
+          <label for="password"></label>
+        </div>
+        <button type="submit" name="">Register</button><br />
+        <div class="other">
+          <div class=".text-start">
+            <a href="./login.php" target="_blank">Already have an account?</a>
+          </div>
+          <div class=".text-end">
+            <a href="./login.php" target="_blank">Sign In</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
